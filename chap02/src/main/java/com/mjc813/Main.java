@@ -12,6 +12,7 @@ public class Main {
         sec10 v03 = new sec10();
         v03.Sec10();
 
-
+        sec13 v04 = new sec13();
+        v04.howToUseVariable();
     }
 }
