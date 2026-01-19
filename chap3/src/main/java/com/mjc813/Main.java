@@ -17,6 +17,9 @@ public class Main {
         Chapter03_5 v05 = new Chapter03_5();
         v05.third05();
 
+        Chapter03_6 v06 = new Chapter03_6() ;
+        v06.third06();
+
 
     }
 }
