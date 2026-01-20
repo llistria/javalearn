@@ -1,6 +1,6 @@
 package com.mjc813;
 
-public class chp5_04_2 {
+public class ch05_04_2 {
     public void FI04_2(){
         String hobby = "여행";
         hobby = null;

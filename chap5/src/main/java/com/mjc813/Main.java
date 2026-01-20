@@ -7,7 +7,7 @@ public class Main {
         v01.FI03();
         ch05_04_1 v02 = new ch05_04_1();
         v02.FI04_1();
-        chp5_04_2 v03 = new chp5_04_2();
+        ch05_04_2 v03 = new ch05_04_2();
         v03.FI04_2();
         ch05_05_1 v04 = new ch05_05_1();
         v04.FI05_1();
