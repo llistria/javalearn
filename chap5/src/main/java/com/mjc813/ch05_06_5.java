@@ -2,7 +2,7 @@ package com.mjc813;
 
 public class ch05_06_5 {
     public void FI06_5(){
-        int[][] scores = {
+        int[][] scores = new int[][] {
                 {80,90,96},
                 {76,88}
         };
