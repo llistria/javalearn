@@ -14,7 +14,7 @@ public class ch05_ex2 {
         int zero = 0;
         for (int i = 0; i < intDemention2.length; i++) {
             for (int k = 0; k < intDemention2[i].length; k++){
-                if( intDemention2[i][k] == 0){
+                if( intDemention2[i][ k] == 0){
                     zero ++;
                 }
                 else{

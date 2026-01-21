@@ -3,8 +3,9 @@ package com.mjc813;
 // 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
 public class Main {
     static void main() {
-        ch05_ex3 v01 = new ch05_ex3();
-        v01.FI_EX3();
+        ch05_ex_6 v01 = new ch05_ex_6();
+        v01.FI_EX_6();
+
 
 
     }
