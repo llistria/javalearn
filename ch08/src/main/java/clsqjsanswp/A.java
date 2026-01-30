@@ -1,0 +1,6 @@
+package clsqjsanswp;
+
+
+public interface A {
+    void method1();
+}

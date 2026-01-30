@@ -1,6 +1,10 @@
 package dws;
 
-public class Cat extends SoundableExample {
-    
+public class Cat implements Soundable  {
 
+    @Override
+    public String sound() {
+        System.out.println("야옹");
+        return "";
+    }
 }
