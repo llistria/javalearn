@@ -1,0 +1,11 @@
+package com.mjc813;
+
+//TIP 코드를 <b>실행</b>하려면 <shortcut actionId="Run"/>을(를) 누르거나
+// 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
+public class Main {
+    static void main() {
+        com.mjc813.SealedExample v01 = new SealedExample();
+        v01.SE();
+
+    }
+}
