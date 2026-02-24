@@ -4,8 +4,8 @@ package com.mjc813;
 // 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
 public class Main {
     static void main() throws Exception {
-        com.mjc813.GetPropertyExample v01 = new GetPropertyExample ();
-        v01.GPE();
+        com.mjc813.PatternExample2 v01 = new PatternExample2 ();
+        v01.PE2();
 
     }
 }
