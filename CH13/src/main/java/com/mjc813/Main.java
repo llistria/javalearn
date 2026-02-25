@@ -9,7 +9,7 @@ public class Main {
         pkg.add(new Human("이영희", 30));
         pkg.add(new Human("박민수", 22));
         System.out.println("Human 객체 3개를 추가했습니다.");
-       
+
 
 
         Human h1 = (Human) pkg.remove();
