@@ -1,0 +1,6 @@
+
+
+# DB volumes (bind-mounted)
+mysql/data/
+mariadb/data/
+postgresql/data/

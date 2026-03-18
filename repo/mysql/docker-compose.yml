@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  mysql8:
+    image: mysql:8.0
+    container_name: mysql8-local
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass123!
+      MYSQL_DATABASE: appdb
+      MYSQL_USER: appuser
+      MYSQL_PASSWORD: apppass123!
+      # MySQL 8 기본 인증은 caching_sha2_password (DBeaver OK)
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./data:/var/lib/mysql
+      # 초기 스키마/데이터를 넣고 싶다면 ./init/*.sql을 마운트
+      # - ./init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-prootpass123!"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    command: [
+      "--character-set-server=utf8mb4",
+      "--collation-server=utf8mb4_0900_ai_ci"
+    ]
