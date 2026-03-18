@@ -58,3 +58,12 @@ bin/
 ##gradle ##
 .gradle/
 gradle/
+
+
+# DB volumes (bind-mounted)
+*data
+*data
+*data
+
+# DBeaver local metadata (원한다면 함께 제외)
+.dbeaver/

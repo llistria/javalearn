@@ -1,6 +1,8 @@
 
-
 # DB volumes (bind-mounted)
 mysql/data/
 mariadb/data/
 postgresql/data/
+
+# DBeaver local metadata (원한다면 함께 제외)
+.dbeaver/
