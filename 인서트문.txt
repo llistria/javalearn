@@ -1,0 +1,41 @@
+인서트문
+INSERT INTO users (userid, username, userage, useremail, userpassword)
+	VALUES('SATO', '장성민', 24, 'SEIYA@naver.com', '0207')
+
+INSERT INTO users (userid, username, userage, useremail, userpassword)
+	VALUES('SIO2', '홍석영', 24, 'ruto@naver.com', '1027');
+
+INSERT INTO users (userid, username, userage, useremail, userpassword)
+	VALUES('sino', '정우영', 24, 'menhera@naver.com', '5555');
+
+INSERT INTO users (userid, username, userage, useremail, userpassword)
+	VALUES('ketsoku', '조성환', 24, 'botbong@naver.com', '4444');
+
+
+
+업데이트문
+UPDATE users 
+SET useremail  = 'ruto1027' 
+WHERE useremail  = 'rock@naver.com'
+
+삭제문
+DELETE FROM users
+WHERE useremail = 'ruto1027'
+
+문장 변경
+ ALTER TABLE page919  RENAME COLUMN name TO monjang;
+
+출력문
+SELECT * FROM page919  WHERE monjang
+
+업데이트문
+UPDATE page919 
+SET monjang  = '폭설 오는 날' 
+WHERE monjang  = '눈 오는 날'
+
+삭제문
+DELETE FROM page919 
+WHERE monjang = '눈.jpg'
+
+
+
