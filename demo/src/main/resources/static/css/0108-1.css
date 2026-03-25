@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 30px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.input-area {
+  margin-bottom: 40px;
+}
+
+.form-row {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.form-row label {
+  width: 120px;
+  font-weight: bold;
+}
+
+.form-row input,
+.form-row select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+.image-preview {
+  text-align: center;
+  margin: 15px 0;
+}
+
+#showImage {
+  width: 200px;
+  height: auto;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.button-group {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.button-group button {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background: #007bff;
+  border-radius: 5px;
+}
+
+.button-group button:hover {
+  opacity: 0.9;
+}
+
+.listDataBlock {
+  margin-top: 30px;
+  border-top: 2px solid #333;
+}
+
+.listDataRow {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.listDataRow:hover {
+  background: #f0f8ff;
+}
+
+.listItem {
+  flex: 1;
+}
+
+.text-wrapper {
+  font-size: 16px;
+}

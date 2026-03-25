@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.gamecrud.IGameMybatis">
+	<insert id="insertData" parameterType="com.example.demo.gamecrud.GameDto">
+		INSERT INTO game_tbl (
+			name
+			, genre
+			, grade
+			, price
+			, img_url
+		) VALUES (
+			#{name}
+			, #{genre}
+			, #{grade}
+			, #{price}
+			, #{imgUrl}
+		)
+	</insert>
+
+	<update id="updateData" parameterType="GameDto">
+		UPDATE game_tbl SET
+			name = #{name}
+						  , price = #{price}
+						  , genre = #{genre}
+						  , img_url = #{imgUrl}
+						  , grade = #{grade}
+		WHERE id = #{id}
+	</update>
+</mapper>
