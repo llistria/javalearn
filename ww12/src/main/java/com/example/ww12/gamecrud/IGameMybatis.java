@@ -6,4 +6,6 @@ import org.apache.ibatis.annotations.Mapper;
 public interface IGameMybatis {
 	void insertData(GameDto newGame);
 	void updateData(GameDto gameData);
+	void deleteData(Integer id);
+
 }

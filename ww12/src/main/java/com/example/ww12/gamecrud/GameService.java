@@ -17,4 +17,9 @@ public class GameService {
 	}
 
 
+	public void deleteData(Integer id) {
+		this.gameMybatis.deleteData(id);
+	}
+
+
 }
