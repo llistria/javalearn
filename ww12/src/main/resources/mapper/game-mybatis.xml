@@ -3,7 +3,9 @@
 
 <mapper namespace="com.example.ww12.gamecrud.IGameMybatis">
 
-	<insert id="insertData" parameterType="GameDto">
+	<insert id="insertData"
+			parameterType="com.example.ww12.gamecrud.GameDto">
+
 		INSERT INTO game_tbl (
 			genre
 			, price
@@ -19,7 +21,8 @@
 		)
 	</insert>
 
-	<update id="updateData" parameterType="GameDto">
+	<update id="updateData"
+			parameterType="com.example.ww12.gamecrud.GameDto">
 		UPDATE game_tbl SET
 			name = #{name}
 			, price = #{price}
@@ -29,8 +32,61 @@
 		WHERE id = #{id}
 	</update>
 
-	<delete id="deleteData" parameterType="Integer">
+	<delete id="deleteData"
+			parameterType="java.lang.Integer">
 		DELETE FROM game_tbl
 		WHERE id = #{id}
 	</delete>
+
+	<select id="findById"
+			parameterType="java.lang.Integer"
+			resultType="com.example.ww12.gamecrud.GameDto">
+
+		SELECT
+			id
+			, name
+			, genre
+			, grade
+			, price
+			, img_url
+		FROM game_tbl
+		WHERE id = #{id}
+	</select>
+
+	<select id="countList"
+			parameterType="com.example.ww12.gamecrud.SearchRequestDto"
+			resultType="java.lang.Integer">
+		SELECT
+			count(*) AS cnt
+		FROM game_tbl
+		WHERE 1 = 1
+		<if test="searchName != ''">
+			AND name LIKE CONCAT('%', #{searchName}, '%')
+		</if>
+		<if test="searchGrade != ''">
+			AND grade = #{searchGrade}
+		</if>
+	</select>
+
+	<select id="searchList"
+			parameterType="com.example.ww12.gamecrud.SearchRequestDto"
+			resultType="com.example.ww12.gamecrud.GameDto">
+		SELECT
+			id
+			, name
+			, genre
+			, grade
+			, price
+			, img_url
+		FROM game_tbl
+		WHERE 1 = 1
+		<if test="searchName != ''">
+			AND name LIKE CONCAT('%', #{searchName}, '%')
+		</if>
+		<if test="searchGrade != ''">
+			AND grade = #{searchGrade}
+		</if>
+		ORDER BY id DESC
+		LIMIT ${rowsPerPage} OFFSET #{curPage}
+	</select>
 </mapper>
