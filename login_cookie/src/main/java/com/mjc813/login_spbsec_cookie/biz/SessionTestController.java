@@ -1,4 +1,4 @@
-package com.example.login_ses.biz;
+package com.mjc813.login_spbsec_cookie.biz;
 
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class CookieTestController {
+public class SessionTestController {
 
 	@GetMapping("/cookie/make")
 	public String make(HttpServletResponse response

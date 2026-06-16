@@ -29,7 +29,7 @@ spring:
     charset: UTF-8
 
 server:
-  port: 8181
+  port: 8081
   servlet:
     encoding:
       charset: UTF-8
