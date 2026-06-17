@@ -32,6 +32,7 @@ public class SessionSignRestController {
 	// ─── 이메일 테스트 (변경 없음) ───────────────────────────────────────────────
 	@GetMapping("/emailtest/{id}")
 	public ResponseEntity<ComResponseDto<MemberDto>> emailTest(@PathVariable String id) {
+
 		MemberDto find = this.memberService.findById(id);
 		return ResponseEntity.status(200).body(
 				ComResponseDto.make(ResponseCode.SUCCESS, find)
