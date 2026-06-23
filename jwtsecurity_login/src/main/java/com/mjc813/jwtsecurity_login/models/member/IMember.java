@@ -1,4 +1,4 @@
-package com.example.spring_sec.models.member;
+package com.mjc813.jwtsecurity_login.models.member;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

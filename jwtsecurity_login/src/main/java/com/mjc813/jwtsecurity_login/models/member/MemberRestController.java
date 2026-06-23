@@ -1,8 +1,8 @@
-package com.example.spring_sec.models.member;
+package com.mjc813.jwtsecurity_login.models.member;
 
-import com.example.spring_sec.common.ComResponseDto;
-import com.example.spring_sec.common.ResponseCode;
-import com.example.spring_sec.models.role.Role;
+import com.mjc813.jwtsecurity_login.common.ComResponseDto;
+import com.mjc813.jwtsecurity_login.common.ResponseCode;
+import com.mjc813.jwtsecurity_login.models.role.Role;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.ui.Model;

@@ -1,7 +1,7 @@
 package com.example.spring_sec.models.auth;
 
-import com.example.spring_sec.models.member.IMember;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.example.spring_sec.models.member.IMember;
 import lombok.*;
 
 import java.time.LocalDateTime;
